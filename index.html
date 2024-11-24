@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول امتحان الميدترم للمواد الإنسانية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            min-height: 100vh;
+            position: relative; /* تعديل */
+            overflow-y: auto; /* تفعيل التمرير */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 60px;
+        }
+        header .college-name {
+            font-size: 20px;
+            color: #333;
+            margin-right: 10px;
+        }
+        .nav-bar {
+            background-color: #f39c12;
+            padding: 15px 0;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap; /* يسمح بتوزيع العناصر بشكل مرن */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #e67e22;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: #d35400;
+            transform: scale(1.1);
+        }
+        .title {
+            color: white;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .exam-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .exam {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            padding: 15px;
+            width: 280px;
+            text-align: center;
+            position: relative;
+        }
+        .exam img {
+            height: 70px;
+            margin-bottom: 10px;
+        }
+        .exam h2 {
+            color: #3498db;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .orange-label {
+            background-color: #f39c12;
+            color: white;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .exam .date {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #555;
+        }
+        .countdown {
+            font-size: 16px;
+            color: #333;
+            margin-top: 5px;
+        }
+        .expired {
+            color: red;
+            font-weight: bold;
+        }
+        /* استجابة للأجهزة الصغيرة */
+        @media (max-width: 768px) {
+            .exam {
+                width: 90%; /* تمدد الامتحانات على عرض الهاتف */
+            }
+            .title {
+                font-size: 20px;
+            }
+            nav a {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <img src="fetlogo.png" alt="لوجو كلية الهندسة">
+            <div class="college-name">كلية الهندسة - جامعة طنطا</div>
+            <img src="tulogo.png" alt="لوجو جامعة طنطا">
+        </header>
+        <div class="nav-bar">
+            <nav>
+                <a href="#oral">الشفوي</a>
+                <a href="#final">الفاينال</a>
+                <a href="#midterm">الميدترم</a>
+            </nav>
+        </div>
+<div class="title">جدول امتحان الميدترم للمواد الإنسانية</div>
+        <div class="exam-container">
+           <div class="exam">
+    <img src="إدارة_المشروعات.png" alt="لوجو المادة" class="exam-logo">
+    <h2>إدارة المشروعات</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">السبت 23 نوفمبر 2024 - الساعة الثانية ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-11-23T14:00:00"></div>
+    <button onclick="window.location.href='إدارة_المشروعات.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>	
+</div>
+
+<div class="exam">
+    <img src="اللغة_الألمانية.png" alt="لوجو المادة" class="exam-logo">
+    <h2>اللغة الألمانية</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">الأربعاء 27 نوفمبر 2024 - الساعة الثانية ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-11-27T14:00:00"></div>
+    <button onclick="window.location.href='اللغة_الألمانية.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>		
+</div>
+
+<div class="exam">
+    <img src="اقتصاد_هندسي.png" alt="لوجو المادة" class="exam-logo">
+    <h2>اقتصاد هندسي و دراسه جدوى</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">الخميس 28 نوفمبر 2024 - الساعة الثانية ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-11-28T14:00:00"></div>
+    <button onclick="window.location.href='اقتصاد_هندسي.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>			
+</div>
+
+<div class="exam">
+    <img src="التقارير_الفنية.png" alt="لوجو المادة" class="exam-logo">
+    <h2>التقارير الفنية</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">السبت 30 نوفامبر 2024 - الساعة الثانية و النصف ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-11-30T14:30:00"></div>
+    <button onclick="window.location.href='التقارير_الفنية.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>
+
+</div>
+
+<div class="exam">
+    <img src="رياضيات_هندسية_3.png" alt="لوجو المادة" class="exam-logo">
+    <h2>رياضيات هندسية (3)</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">الأربعاء 4 ديسمبر 2024 - الساعة التاسعه صباحًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-12-04T09:00:00"></div>
+    <button onclick="window.location.href='رياضيات_هندسية_3.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>			
+</div>
+
+<div class="exam">
+    <img src="التفكير_العلمي.png" alt="لوجو المادة" class="exam-logo">
+    <h2>التفكير العلمي</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">الأربعاء 4 ديسمبر 2024 - الساعة الثانية ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-12-04T14:00:00"></div>
+    <button onclick="window.location.href='التفكير_العلمي.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>
+	
+</div>
+
+<div class="exam">
+    <img src="مقدمة_في_تكنولوجيا_المعلومات.png" alt="لوجو المادة" class="exam-logo">
+    <h2>مقدمة في تكنولوجيا المعلومات</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">الخميس 5 ديسمبر 2024 - الساعة الثانية ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-12-05T14:00:00"></div>
+    <button onclick="window.location.href='مقدمة_في_تكنولوجيا_المعلومات.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>			
+</div>
+
+<div class="exam">
+    <img src="القيم_والسلامة_المهنية.png" alt="لوجو المادة" class="exam-logo">
+    <h2>الصحه والسلامة المهنية</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">الأربعاء 11 ديسمبر 2024 - الساعة الثانية ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-12-11T14:00:00"></div>
+    <button onclick="window.location.href='القيم_والسلامة_المهنية.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>			
+</div>
+
+<div class="exam">
+    <img src="اللغة_الإنجليزية.png" alt="لوجو المادة" class="exam-logo">
+    <h2>اللغة الإنجليزية</h2>
+    <div class="orange-label">تاريخ المادة</div>
+    <div class="exam-date">الخميس 12 ديسمبر 2024 - الساعة الثانية ظهرًا</div>
+    <div class="orange-label">باقي من الوقت</div>
+    <div class="countdown" data-date="2024-12-12T14:00:00"></div>
+    <button onclick="window.location.href='اللغة_الإنجليزية.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        تفاصيل المادة وأماكن اللجان
+    </button>		
+</div>
+
+
+
+        </div>
+    </div>
+    <script>
+        function updateCountdown() {
+            const countdownElements = document.querySelectorAll('.countdown');
+            countdownElements.forEach(element => {
+                const targetDate = new Date(element.getAttribute('data-date')).getTime();
+                const now = new Date().getTime();
+                const timeDiff = targetDate - now;
+
+                if (timeDiff > 0) {
+                    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+                    element.innerHTML = `${days} يوم ${hours} ساعة ${minutes} دقيقة ${seconds} ثانية`;
+                } else {
+                    element.innerHTML = '<span class="expired">مر وقت الامتحان</span>';
+                }
+            });
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
+
